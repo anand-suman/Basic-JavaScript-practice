@@ -7,10 +7,10 @@
             console.log(`DB CONNECTED`)
         })();
 
-        ( () => {
-            //without named iffe
-            console.log(`DB CONNECTED TWO`)
-        })();
+        // ( () => {
+        //     //without named iffe
+        //     console.log(`DB CONNECTED TWO`)
+        // })();
         ( (named) => {
             //without named iffe
             console.log(`DB CONNECTED TWO ${named}`)

@@ -16,11 +16,11 @@ const user = {
 
 //console.log(this);// ye return kare ga empty object
 
-function thiskakhela(){
-    let username = "Nalini "
-console.log(this.username);//undefined print kare ga functin ke andaer use kar rhe hai iss liye
+// function thiskakhela(){
+//     let username = "Nalini "
+// console.log(this.username);//undefined print kare ga functin ke andaer use kar rhe hai iss liye
 
-}
+// }
 // thiskakhela()
 
 
@@ -45,6 +45,50 @@ const chai = () => {
 // console.log(addtwo(5,6));// idhar koi problem nhi hai sab thik hai output ayega.
 
 // const myArray = [2,3,4,54]
+
+function thiskakhela(){
+    // let username = "Nalini "
+console.log(this);//undefined print kare ga functin ke andaer use kar rhe hai iss liye
+
+}
+thiskakhela()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // myArray.forEach()// baad me dekhna hai
 /*
