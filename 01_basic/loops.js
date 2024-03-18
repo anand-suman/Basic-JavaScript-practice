@@ -52,10 +52,10 @@ const mycoding = [
         languageFileName: "c++"
     },
 ]
-// mycoding.forEach( (item) => {
-//     console.log(item.languageName)
-//     console.log(item.languageFileName)
-// } )
+mycoding.forEach( (item) => {
+    console.log(item.languageName)
+    //console.log(item.languageFileName)
+} )
 
 // const values = coding.forEach((item) => {
 //     console.log(item);
@@ -289,4 +289,4 @@ const shoppingCart = [
 
 const pricetoPay = shoppingCart.reduce((acc,item) => acc + item.price,0)
 
-console.log(pricetoPay);
+// console.log(pricetoPay);
