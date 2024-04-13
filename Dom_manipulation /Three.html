@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three_wala html</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div') // to creating the element inside the web page
+    console.log(div);// to printing the element
+    div.className= "main"   //to inserting the class name to the created element
+    div.id= Math.random //To inserting the id to the element
+    div.setAttribute("title","genrated title")  // to insrt some coustmize attribute inside the element
+    div.style.backgroundColor = "green" //stylying to the element
+    div.style.padding="14px"
+
+    const addtext = document.createTextNode("Jay shre Ram , Jay shree ram , raja ram ") // to adding some taket node to the web page 
+
+    div.appendChild(addtext)    // To attach the created text to the element as a children
+
+    document.body.appendChild(div)  // To attach the div element to the web page as children
+
+</script>
+</html>

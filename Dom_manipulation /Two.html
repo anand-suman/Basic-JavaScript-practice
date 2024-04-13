@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <!-- <div class="day">JAY SHREE RAM</div> -->
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+</body>
+<script>
+   const parent2= document.querySelector('.parent')     // ye jo v menoplation ho rha hai script bol ke wo web pe use hota hai 
+//    console.log(parent2);         //ye jo 1st line hai wo parent mana jata hai iss ke alag alag child hote hai jab hum parent print karna chahe toh pura parent print hoga
+//    console.log(parent2.children);        //idhar humlog parnt ke child parint kar rhe hai specific
+//    console.log(parent2.children[1].innerHTML);       //ye array ke jaisa kam karta hai pura array nhi hai but array ke kuchh function kam karte hai prototype me dekhne se pata chale ga okay
+    for (let i = 0; i < parent2.children.length; i++) {
+        console.log(parent2.children[i].innerHTML);         //idhar jo out put milla tha wo loop nhi de rha tha but hum logo ne for loop use kar ke element accise kar hai 
+        
+    }
+    // parent2.children[1].Style.color = "#6699ff" // iss line me error hai kam nhi kar rha hai
+//     console.log(parent2.firstElementChild)       // iss argument se 1st element milleta hai , iss ka use tab higa jab koi bara code hai or apan ko 1st elemetn chahiye hoga tab isska use karrenge
+//     console.log(parent2.lastElementChild)        //dame se the abave elemnet iss me last elemetn mill ga
+    const dayone = document.querySelector('.day')   // jaise ki parent ko accise kiya jata hai wose hi child ko bs access kiy aja ta ha i bs itna yadd  rakhana ki childe ki trough v aj sakte hai
+    // console.log(dayone);                          // ye 1st day utha ke de de ga
+    // console.log(dayone);                         
+    console.log(dayone.parentElement);
+    // // console.log(dayone.parentElement);        // ye pura parent utha ke de dega ek baar runn karna hai
+    // console.log(dayone.nextElementSibling)       //ye 2nd element dega bcz ye sibling hai iss liye
+    // console.log("NODES: ", parent2.childNodes)   // ye pure script me itne node hai ye pata hai hai , ye jo hai next line va count karta hai lekin ba ek baar hi next line count kare ga
+
+ </script>
+</html>

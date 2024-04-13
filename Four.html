@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four</title>
+</head>
+<body>
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlang(lang_nam)                      // ye function or v content add karne ke liye likh gya hai upar diye gye unorder list me
+    {
+        const li = document.createElement('li');
+        li.innerHTML = `${lang_nam}`
+        document.querySelector('.lang').appendChild(li)
+    }
+    addlang("java")
+
+    function addoptlang(lang)                       // same hi funtion hai bs iss ko optimize kar ke likha gya hai textNode ke throuh
+    {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.lang').appendChild(li)
+    }
+    addoptlang("python")
+
+    //&&&&&&&&&&&&&&&&&&&&&&&& Edit
+    const secnd_element = document.querySelector("li:nth-child(2)")     // specific ekement ko target kar ke likha gya code to chage the above one
+    secnd_element.innerHTML = " cpp "
+
+    const secnd_opt_element = document.querySelector("li:nth-child(2)")     // same hi upar ke jaise
+    const newone=document.createTextNode('li')
+    newone.textContent="Jay shre ram"
+    secnd_opt_element.replaceWith(newone)
+
+    const firstlang = document.querySelector("li:first-child")          // outter html ko use kiy agya hai
+    firstlang.outerHTML= '<li>Jay ho baba ki</li>'
+
+    // remove
+    const lastelment = document.querySelector("li:last-child")      // remove karne ke liye use kiya gya hai
+    lastelment.remove()
+
+</script>
+</html>
